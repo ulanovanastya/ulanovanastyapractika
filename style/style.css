@@ -513,3 +513,110 @@ header {
             height: auto;
         }
     }
+    @media (max-width: 768px) {
+        .head .container {
+            grid-template-columns: repeat(20, 50px);
+            grid-template-rows: repeat(20, 50px);
+        }
+    
+        .gr1 {
+            grid-column-start: 1;
+            grid-column-end: 10;
+            grid-row-start: 1;
+        }
+    
+        .gr1 h1 {
+            padding-bottom: 20px;
+        }
+    
+        .aa {
+            width: 220px;
+            grid-column-start: 3;
+            grid-row-start: 12;
+        }
+    
+        .aa:nth-child(2) {
+            display: none;
+        }
+    
+        .aa:nth-child(3) {
+            grid-column-start: 4;
+            width: 140px;
+            height: 141px;
+            grid-row-start: 7;
+        }
+    
+        .aa:nth-child(4) {
+            grid-column-start: 1;
+            width: 140px;
+            height: 141px;
+            grid-row-start: 9;
+        }
+    
+        .aa:nth-child(5) {
+            grid-column-start: 9;
+            width: 100px;
+            height: 101px;
+            grid-row-start: 12;
+        }
+    
+        .aa:nth-child(6) {
+            grid-column-start: 7;
+            width: 150px;
+            height: 151px;
+            grid-row-start: 9;
+        }
+    
+        .navbar>.container,
+        .navbar>.container-fluid,
+        .navbar>.container-lg,
+        .navbar>.container-md,
+        .navbar>.container-sm,
+        .navbar>.container-xl,
+        .navbar>.container-xxl {
+            flex-direction: row-reverse;
+        }
+    
+        .navbar-collapse {
+            display: flex;
+            justify-content: end;
+        }
+    
+        .nav {
+            flex-direction: column;
+            background-color: #fff;
+            align-items: center;
+            gap: 10px;
+        }
+    
+        .lato-bold {
+            font-size: 16px;
+            text-decoration: underline;
+    
+        }
+    
+        .navbar-toggler {
+            
+            background-color: #f87932;
+    
+                margin-top: 20px;
+                margin-bottom: 20px;
+                clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+                position: relative;
+                right: 70px;
+            
+        }
+    
+        .nav-link {
+            background-color: rgba(0, 0, 0, 0);
+            box-shadow: none;
+            transition: none;
+    
+        }
+    
+        .nav-link:hover {
+            box-shadow: none;
+            padding: 0;
+            height: auto;
+        }
+    }
