@@ -90,11 +90,10 @@ header {
 }
 .form-group-2 {
     position: relative;
-    width: 100% px;
-    margin-top: 77px;
-    margin-bottom: 40px;
+    width: 100%;
+    margin-top: 38px;
+    margin-bottom: -31px;
     text-align: center;
-    top: -21px;
     align-items: center;
     display: flex;
     justify-content: center;
