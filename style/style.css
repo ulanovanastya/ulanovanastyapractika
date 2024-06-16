@@ -1271,6 +1271,15 @@ header {
             grid-row-start: 1;
             grid-row-end: 2;
         }
+        .navbar-expand-lg .navbar-collapse {
+            display: flex !important;
+            flex-basis: auto;
+            justify-content: center;
+            width: 100%;
+            align-content: center;
+            position: relative;
+            right: -120px;
+        }
     }
     
     @media (max-width:768px) {
