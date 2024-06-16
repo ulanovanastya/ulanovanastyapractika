@@ -101,3 +101,66 @@ header {
     justify-content: center;
 }
 
+
+.aa {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 400px;
+    height: 401px;
+    border-radius: 15px;
+    border: 5px solid #fff;
+    transform: rotate(45deg);
+    grid-column-start: 8;
+    grid-row-start: 2;
+}
+
+.aa:nth-child(2) {
+    grid-column-start: 13;
+    width: 100px;
+    height: 101px;
+    grid-row-start: 5;
+}
+
+.aa:nth-child(3) {
+    grid-column-start: 13;
+    width: 180px;
+    height: 181px;
+    grid-row-start: 2;
+}
+
+.aa:nth-child(4) {
+    grid-column-start: 11;
+    width: 200px;
+    height: 201px;
+    grid-row-start: 7;
+}
+
+.aa:nth-child(5) {
+    grid-column-start: 8;
+    width: 130px;
+    height: 131px;
+    grid-row-start: 8;
+}
+
+.aa:nth-child(6) {
+    grid-column-start: 6;
+    width: 200px;
+    height: 201px;
+    grid-row-start: 6;
+}
+
+.aa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: rotate(-55deg) scale(2);
+    transition: 2s;
+}
+
+.aa:hover img {
+    transform: rotate(-45deg) scale(2);
+}
+.carousel-item {
+    width: 400px;
+    height: 401px;
+}
