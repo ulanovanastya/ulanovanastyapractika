@@ -1,0 +1,662 @@
+body {
+    background-color: #bcbcf0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+   
+}
+
+
+
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    height: 114px;
+}
+
+nav ul {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+}
+
+nav li {
+    margin-right: 20px; /* Отступ между элементами навигации */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 7px 25px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 22px;
+}
+
+nav a:hover {
+    background-color: white;
+    color: orange; /* Меняем цвет при наведении */
+}
+
+
+/*  Добавьте стили для main и footer здесь, если нужно */
+main {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+footer {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #bcbcf0;
+    border-radius: 10px;
+    margin: 0px;
+}
+
+.text-container {
+    flex: 1; /* Занимает доступное место */
+    margin-right: 40px; /* Отступ от картинки */
+}
+
+.text-container h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.text-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.main-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 22px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.main-button:hover {
+    background-color: white;
+    color: orange;
+    border: 2px solid purple; /* Фиолетовая обводка */
+    transform: scale(1.1); /* Увеличение при наведении */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Тень для эффекта */
+}
+
+.dog-image {
+    max-width: 50%;
+    height: auto;
+    position: relative;
+    left: 41px;
+    top: 41px;
+}
+
+@media (max-width: 768px) { /* Адаптация для меньших экранов */
+    .main-section {
+        flex-direction: column; /* Элементы друг под другом */
+        align-items: center;
+    }
+    .text-container {
+        margin-right: 0;
+        text-align: center;
+    }
+    .dog-image {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
+/* (CSS из предыдущих ответов) */
+
+.pets-section {
+    background-color: #E6E6FA; /* Светло-фиолетовый фон */
+    padding: 40px;
+    text-align: center; /* Заголовок по центру */
+}
+
+.pets-section h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #acacee;
+}
+
+.pets-section h3 {
+    font-size: 23px;
+    margin-bottom: 30px;
+    color: #bcbcf0;
+}
+
+.pet-cards {
+    display: flex;
+    flex-wrap: wrap; /* Разрешаем перенос на новую строку */
+    justify-content: center; /* Выравнивание по центру */
+}
+
+.pet-card {
+    width: 30%;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pet-card img {
+    width: 100%;
+    height: auto;
+}
+
+.pet-card p {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.meet-button {
+    display: none; /* Кнопка скрыта по умолчанию */
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 22px;
+    margin: 10px auto; /* По центру */
+    width: fit-content;
+    cursor: pointer;
+}
+
+.pet-card:hover {
+    transform: scale(1.05); /* Увеличение при наведении */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pet-card:hover .meet-button {
+    display: block; /* Показываем кнопку при наведении */
+}
+
+@media (max-width: 768px) {
+    .pet-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 500px) {
+    .pet-card {
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+.stats-section {
+    background-color: #bcbcf0;
+    padding: 40px;
+    text-align: center;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-around; /* Расстояние между элементами */
+    flex-wrap: wrap; /* Разрешаем перенос на новую строку */
+}
+
+.stat-item {
+    width: 45%; /* Ширина элемента статистики */
+    margin: 20px;
+    text-align: center;
+}
+
+.stat-item img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.stat-item h3 {
+    font-size: 3em;
+    margin-top: 24px;
+    color: #474747;
+}
+
+
+@media (max-width: 768px) {
+    .stat-item {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+.about-section {
+    background-color: #f8f8f8;
+    padding: 40px;
+}
+.about-section h2{
+text-align: center;
+margin-bottom: 20px;
+    font-size: 3em;
+    color: #bcbcf0;
+}
+
+.about-content {
+    display: flex;
+    align-items: flex-start; /* Выравниваем текст и картинку сверху */
+    flex: 1;
+    margin-right: 20px;
+}
+
+
+.text-column {
+    flex: 1; /* Текст занимает доступное место */
+}
+
+.text-column p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 34px;
+    color: #474747;
+}
+
+.about-image {
+    max-width: 40%;
+    height: auto;
+}
+
+
+.read-more {
+    color: orange;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column; /* Текст и картинка друг под другом на меньших экранах */
+        align-items: center;
+    }
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+    }
+    .about-image {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
+
+
+/* (CSS из предыдущих ответов) */
+
+.contact-section {
+    background-color: #E6E6FA; /* Светло-фиолетовый фон */
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+    font-size: 3em;
+    color: #bcbcf0;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px; /* Отступ сверху */
+    width: 80%; /* Занимает 80% ширины контейнера */
+    max-width: 1200px; /* Максимальная ширина */
+    margin-left: auto;
+    margin-right: auto; /* Центрирование блока */
+}
+
+
+.contact-image {
+    width: 40%;
+    height: auto;
+    margin-right: 20px; /* Отступ от формы */
+}
+
+.contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Элементы формы вертикально */
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.5); /* Оранжевая подсветка */
+    color: orange; /* Меняем цвет текста */
+}
+
+.contact-text {
+    margin-top: 20px;
+    font-style: italic;
+    text-align: center;
+    color: #bcbcf0;
+    font-size: 26px;
+}
+
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column; /* Элементы друг под другом на меньших экранах */
+        align-items: center;
+    }
+    .contact-image {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .contact-form {
+        width: 100%;
+    }
+    .contact-text{
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* (CSS из предыдущих ответов) */
+
+footer {
+    background-color: #bcbcf0;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Занимает всю ширину */
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo-nav img {
+    margin-right: 20px;
+    position: relative;
+    top: 26px;
+}
+
+
+.logo-nav nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-nav nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.logo-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 21px;
+}
+
+.contact-info {
+    margin: 0 20px;
+    text-align: center;
+    font-size: 21px;
+    color: white;
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-media a {
+    margin-left: 15px;
+    font-size: 1.5em;
+    color: orange;
+}
+
+/*  Подключение Font Awesome (необходимо подключить библиотеку Font Awesome) */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Элементы друг под другом на меньших экранах */
+        align-items: center;
+    }
+    .logo-nav {
+        margin-bottom: 15px;
+    }
+    .contact-info, .social-media {
+        margin: 10px 0;
+        text-align: center; /*Центрируем на маленьких экранах*/
+    }
+}
+
+/* #7640aa */
+
+
+
+.stats-section h2 {
+    font-size: 3em;
+    color: white;
+}
+
+
+.stats-section p {
+    font-size: 19px;
+    position: relative;
+    bottom: 43px;
+    color: #474747;
+}
+
+
+
+
+
+
+.page {
+    width: 432px;
+    background: white;
+    border: 20px solid #bcbcf0;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 8%;
+}
+
+.header {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    color: #bcbcf0;
+    margin: 40px 0 15px 0;
+    display: inline-block;
+}
+.feedback-input {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #ffa500;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 10px;
+    border: 1px solid white;
+    border-bottom: 1px dotted #ffa500;
+    width: 90%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    font-family: Helvetica, Arial, sans-serif;
+    cursor: pointer;
+    background-color: white;
+    color: #ffa500;
+    font-size: 15px;
+    margin: 25px 0 30px 0;
+    padding: 10px 0;
+    width: 130px;
+    border: 2px solid #ffa518;
+    border-radius: 25px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+textarea {
+  height: 180px;
+  line-height: 150%;
+}
+
+.submit-button:hover{
+    background-color: #bcbcf0;
+border: 2px solid #131321;
+color: #f6f6ff;
+font-weight: 700;
+}
+
+.definition {
+font-family: Helvetica, Arial, sans-serif;
+font-size: 14px;
+padding: 10px;
+border: 10px solid #F1A3B6;
+border-radius: 10px;
+background: white;
+color: #9B9B9B;
+position: absolute;
+}
+
+.definition:after
+{
+content: ' ';
+position: absolute;
+width: 0;
+height: 0;
+left: 70%;
+top: 100px;
+border: 25px solid;
+border-color: #F1A3B6 transparent transparent #F1A3B6;
+}
+
+.name_def {
+width: 180px;
+top: 40%;
+left: 7%;
+}
+
+.email_def {
+width: 120px;
+top: 45%;
+left: 75%;
+}
+
+.message_def {
+width: 190px;
+top: 17%;
+left: 67%;
+}
+
+.feedback-input:focus {
+outline: none;
+}
+
+@media only screen and (max-width : 710px) {
+.name_def {
+  left: 40%;
+}
+.email_def {
+  left: 15%;
+}
+.message_def {
+  left: 42%;
+}
+}
+
+
+
+
